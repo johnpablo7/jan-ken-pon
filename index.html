@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jan - Ken - Pon</title>
+  <script>
+    // 1 es piedra, 2 es papel, 3 es tijera
+    let player = 0
+    let pc = 2
+    // let pc = Math.floor(Math.random() * 3) + 1;
+    player = prompt("Choose: 1 for Jan, 2 for Ken, 3 for Pon")
+    // alert("Choose " + player)
+
+    // PLAYER
+    if (player == 1) {
+      alert("You chose ✊")
+    } else if (player == 2) {
+      alert("You chose 📄")
+    } else if (player == 3) {
+      alert("You chose ✂️")
+    } else {
+      alert("choose correctly")
+    }
+
+    // pc
+    if (pc == 1) {
+      alert("PC chose ✊")
+    } else if (pc == 2) {
+      alert("PC chose 📄")
+    } else if (pc == 3) {
+      alert("PC chose ✂️")
+    } else {
+      alert("choose correctly")
+    }
+
+    // VS
+    if (pc == player) {
+      alert("DRAW")
+    } else if (player == 1 && pc == 3) {
+      alert("WIN")
+    } else if (player == 2 && pc == 1) {
+      alert("WIN")
+    } else if (player == 3 && pc == 2) {
+      alert("WIN")
+    } else {
+      alert("LOSE")
+    }
+
+  </script>
+</head>
+
+<body>
+  <h1>Jan - Ken - Pon</h1>
+</body>
+
+</html>
